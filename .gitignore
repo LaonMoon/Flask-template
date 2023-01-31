@@ -1,0 +1,22 @@
+*.txt
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.idea/
+ida
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# build byproducts
+build/
+dist/
+quick_slack.egg-info/
