@@ -2,9 +2,32 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Markdown Page</title>
+  <title>Text File Contents</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .line {
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <div id="content">{{ content|safe }}</div>
+  <div class="container">
+    {% for line in lines %}
+    <div class="line">{{ line }}</div>
+    {% endfor %}
+  </div>
 </body>
 </html>
